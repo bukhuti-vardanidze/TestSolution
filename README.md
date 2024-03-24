@@ -183,63 +183,15 @@ stateDiagram-v2
   Canceled --> [*]
 ```
 
-**4. Glossary**
-
-**User:** An individual who interacts with the platform, either as an event organizer or a customer.
-
-**Event Organizer:** A user who lists and manages events on the platform.
-
-**Customer:** A user who purchases tickets for events listed on the platform.
-
-**PCI-DSS:** Payment Card Industry Data Security Standard, a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
-
-**API:** Application Programming Interface, a set of rules and protocols for building and interacting with software applications.
-
-**Conclusion:**
-This Software Requirements Specification document outlines the requirements and system models for the development of an online ticket selling platform. By adhering to these specifications, the platform aims to provide a seamless experience for both event organizers and customers while ensuring security, efficiency, and user satisfaction.
-
-
-## Glossary
+4. **Glossary:**
 
 - **User:** An individual who interacts with the platform, either as an event organizer or a customer.
 - **Event Organizer:** A user who lists and manages events on the platform.
 - **Customer:** A user who purchases tickets for events listed on the platform.
 - **PCI-DSS:** Payment Card Industry Data Security Standard, a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
 - **API:** Application Programming Interface, a set of rules and protocols for building and interacting with software applications.
+- **Conclusion:** This Software Requirements Specification document outlines the requirements and system models for the development of an online ticket selling platform. By adhering to these specifications, the platform aims to provide a seamless experience for both event organizers and customers while ensuring security, efficiency, and user satisfaction.
+
 ```
-
-
-```markdown
-# Online Ticket Selling Platform
-
-## Introduction
-
-The Online Ticket Selling Platform is designed to simplify the process of buying and selling tickets for various events.
-
-### Purpose
-The purpose of this platform is to provide a user-friendly and efficient system for event organizers to list their events and for customers to purchase tickets.
-
-### Scope
-The platform includes functionalities such as event listing, ticket purchasing, payment processing, user registration, and profile management.
-
-## Requirements Gathering
-
-### Functional Requirements
-- User Registration
-- Event Listing
-- Ticket Purchasing
-- Payment Processing
-- User Notifications
-
-### Non-Functional Requirements
-- Performance
-- Security
-- Usability
-- Compatibility
-
-## System Models
-
-
-
 
 
