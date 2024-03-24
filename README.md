@@ -84,10 +84,6 @@ The platform is intended for the following users:
 
 **3. System Models**
 
-**Use Case Diagram:**
-
-[Include Use Case Diagram]
-
 ### Use Case Diagram
 ```mermaid
 graph TD;
@@ -98,9 +94,6 @@ graph TD;
   C -->|Manages events| B;
 ```
 
-**Class Diagram:**
-
-[Include Class Diagram]
 
 ### Class Diagram
 ```mermaid
