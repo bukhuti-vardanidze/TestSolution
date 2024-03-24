@@ -121,14 +121,6 @@ classDiagram
 
 **Sequence Diagram:**
 
-1. **User Registration:**
-[Include Sequence Diagram]
-
-
-
-3. **Ticket Purchasing:**
-[Include Sequence Diagram]
-
 ### Sequence Diagram: User Registration
 ```mermaid
 sequenceDiagram
@@ -145,10 +137,6 @@ sequenceDiagram
   end
 ```
 
-**Activity Diagram:**
-
-[Include Activity Diagram for Ticket Purchasing Process]
-
 ### Activity Diagram: Ticket Purchasing Process
 ```mermaid
 graph TD;
@@ -160,10 +148,6 @@ graph TD;
   E --> F[Confirmation];
   F --> G[End];
 ```
-
-**State Diagram:**
-
-[Include State Diagram for Ticket Lifecycle]
 
 ### State Diagram: Ticket Lifecycle
 ```mermaid
