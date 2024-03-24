@@ -125,7 +125,7 @@ This Software Requirements Specification document outlines the requirements and 
 
 
 
-Certainly! Below is an example of how you can represent some of the diagrams using Markdown with Mermaid syntax in a README file:
+
 
 ```markdown
 # Online Ticket Selling Platform
@@ -239,4 +239,3 @@ stateDiagram-v2
 - **API:** Application Programming Interface, a set of rules and protocols for building and interacting with software applications.
 ```
 
-You can copy this Markdown code into your README file, and it will render the diagrams properly when viewed in a Markdown viewer that supports Mermaid syntax. Make sure to replace the placeholders with actual content as needed.
