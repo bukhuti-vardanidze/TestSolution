@@ -88,25 +88,100 @@ The platform is intended for the following users:
 
 [Include Use Case Diagram]
 
+### Use Case Diagram
+```mermaid
+graph TD;
+  A[User] -->|Registers| B((System));
+  A -->|Browses events| B;
+  A -->|Purchases tickets| B;
+  B -->|Lists events| C[Event Organizer];
+  C -->|Manages events| B;
+```
+
 **Class Diagram:**
 
 [Include Class Diagram]
+
+### Class Diagram
+```mermaid
+classDiagram
+  User <|-- Customer
+  User <|-- EventOrganizer
+  class User {
+    -userId: int
+    -username: string
+    -email: string
+    +register()
+    +login()
+  }
+  class Customer {
+    -paymentInfo: string
+    +purchaseTicket()
+    +viewEvents()
+  }
+  class EventOrganizer {
+    -eventsList: array
+    +createEvent()
+    +manageEvent()
+  }
+```
 
 **Sequence Diagram:**
 
 1. **User Registration:**
 [Include Sequence Diagram]
 
-2. **Ticket Purchasing:**
+
+
+3. **Ticket Purchasing:**
 [Include Sequence Diagram]
+
+### Sequence Diagram: User Registration
+```mermaid
+sequenceDiagram
+  participant User
+  participant System
+  User ->> System: Request to register
+  System ->> User: Provide registration form
+  User ->> System: Fill out registration form
+  System ->> System: Validate registration data
+  alt Registration data valid
+    System ->> User: Registration successful
+  else Registration data invalid
+    System ->> User: Error message with invalid fields
+  end
+```
 
 **Activity Diagram:**
 
 [Include Activity Diagram for Ticket Purchasing Process]
 
+### Activity Diagram: Ticket Purchasing Process
+```mermaid
+graph TD;
+  A[Start] --> B{Ticket Selection};
+  B -->|Select Ticket| C{More Tickets?};
+  C -->|Yes| B;
+  C -->|No| D[Proceed to Payment];
+  D --> E[Payment];
+  E --> F[Confirmation];
+  F --> G[End];
+```
+
 **State Diagram:**
 
 [Include State Diagram for Ticket Lifecycle]
+
+### State Diagram: Ticket Lifecycle
+```mermaid
+stateDiagram-v2
+  [*] --> Available
+  Available --> Reserved
+  Reserved --> Sold
+  Reserved --> Canceled
+  Sold --> [*]
+  Canceled --> [*]
+```
 
 **4. Glossary**
 
@@ -124,7 +199,14 @@ The platform is intended for the following users:
 This Software Requirements Specification document outlines the requirements and system models for the development of an online ticket selling platform. By adhering to these specifications, the platform aims to provide a seamless experience for both event organizers and customers while ensuring security, efficiency, and user satisfaction.
 
 
+## Glossary
 
+- **User:** An individual who interacts with the platform, either as an event organizer or a customer.
+- **Event Organizer:** A user who lists and manages events on the platform.
+- **Customer:** A user who purchases tickets for events listed on the platform.
+- **PCI-DSS:** Payment Card Industry Data Security Standard, a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
+- **API:** Application Programming Interface, a set of rules and protocols for building and interacting with software applications.
+```
 
 
 ```markdown
@@ -157,85 +239,7 @@ The platform includes functionalities such as event listing, ticket purchasing, 
 
 ## System Models
 
-### Use Case Diagram
-```mermaid
-graph TD;
-  A[User] -->|Registers| B((System));
-  A -->|Browses events| B;
-  A -->|Purchases tickets| B;
-  B -->|Lists events| C[Event Organizer];
-  C -->|Manages events| B;
-```
 
-### Class Diagram
-```mermaid
-classDiagram
-  User <|-- Customer
-  User <|-- EventOrganizer
-  class User {
-    -userId: int
-    -username: string
-    -email: string
-    +register()
-    +login()
-  }
-  class Customer {
-    -paymentInfo: string
-    +purchaseTicket()
-    +viewEvents()
-  }
-  class EventOrganizer {
-    -eventsList: array
-    +createEvent()
-    +manageEvent()
-  }
-```
 
-### Sequence Diagram: User Registration
-```mermaid
-sequenceDiagram
-  participant User
-  participant System
-  User ->> System: Request to register
-  System ->> User: Provide registration form
-  User ->> System: Fill out registration form
-  System ->> System: Validate registration data
-  alt Registration data valid
-    System ->> User: Registration successful
-  else Registration data invalid
-    System ->> User: Error message with invalid fields
-  end
-```
 
-### Activity Diagram: Ticket Purchasing Process
-```mermaid
-graph TD;
-  A[Start] --> B{Ticket Selection};
-  B -->|Select Ticket| C{More Tickets?};
-  C -->|Yes| B;
-  C -->|No| D[Proceed to Payment];
-  D --> E[Payment];
-  E --> F[Confirmation];
-  F --> G[End];
-```
-
-### State Diagram: Ticket Lifecycle
-```mermaid
-stateDiagram-v2
-  [*] --> Available
-  Available --> Reserved
-  Reserved --> Sold
-  Reserved --> Canceled
-  Sold --> [*]
-  Canceled --> [*]
-```
-
-## Glossary
-
-- **User:** An individual who interacts with the platform, either as an event organizer or a customer.
-- **Event Organizer:** A user who lists and manages events on the platform.
-- **Customer:** A user who purchases tickets for events listed on the platform.
-- **PCI-DSS:** Payment Card Industry Data Security Standard, a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
-- **API:** Application Programming Interface, a set of rules and protocols for building and interacting with software applications.
-```
 
