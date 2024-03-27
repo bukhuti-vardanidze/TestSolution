@@ -1,5 +1,3 @@
-i want table of content to be likened:
-
 **Software Requirements Specification (SRS) Document**
 **Online Ticket Selling Platform**
 
