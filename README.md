@@ -65,7 +65,7 @@ The platform is intended for the following users:
    - Users should receive notifications for account activities (e.g., registration confirmation, ticket purchase confirmation).
    - Event organizers should receive notifications for ticket sales and event updates.
 
-## **Non-Functional Requirements:**
+**<a name="non-functional-requirements"> Non-Functional Requirements: </a>**
 1. Performance:
    - The platform should handle concurrent user requests efficiently to prevent system overload.
    - Response times for actions like page loading and transaction processing should be minimal.
@@ -83,9 +83,9 @@ The platform is intended for the following users:
    - The platform should be compatible with modern web browsers and mobile devices.
    - Cross-browser and cross-device compatibility testing should be conducted.
 
-**3. System Models**
+**<a name="system-models"> 3. System Models </a>**
 
-### Use Case Diagram
+### <a name="use-case-diagram">Use Case Diagram </a>
 ```mermaid
 graph TD;
   A[User] -->|Registers| B((System));
@@ -96,7 +96,7 @@ graph TD;
 ```
 
 
-### Class Diagram
+###  <a name="class-diagram"> Class Diagram </a>
 ```mermaid
 classDiagram
   User <|-- Customer
@@ -122,7 +122,7 @@ classDiagram
 
 **Sequence Diagram:**
 
-### Sequence Diagram: User Registration
+### <a name="sequence-diagram"> Sequence Diagram: User Registration </a>
 ```mermaid
 sequenceDiagram
   participant User
@@ -138,7 +138,7 @@ sequenceDiagram
   end
 ```
 
-### Activity Diagram: Ticket Purchasing Process
+### <a name="activity-diagram"> Activity Diagram: Ticket Purchasing Process </a>
 ```mermaid
 graph TD;
   A[Start] --> B{Ticket Selection};
@@ -150,7 +150,7 @@ graph TD;
   F --> G[End];
 ```
 
-### State Diagram: Ticket Lifecycle
+### <a name="state-diagram"> State Diagram: Ticket Lifecycle </a>
 ```mermaid
 stateDiagram-v2
   [*] --> Available
@@ -161,7 +161,7 @@ stateDiagram-v2
   Canceled --> [*]
 ```
 
-4. **Glossary:**
+4. **<a name="glossary">Glossary:</a>** 
 
 - **User:** An individual who interacts with the platform, either as an event organizer or a customer.
 - **Event Organizer:** A user who lists and manages events on the platform.
