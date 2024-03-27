@@ -16,7 +16,7 @@ i want table of content to be likened:
    - 3.5 [State Diagram](#state-diagram)
 4. [Glossary](#glossary)
 
-## <a name="introduction"> 1. Introduction</a>
+## <a name="introduction"> 1. Introduction </a>
 
 **Purpose:**
 The purpose of the online ticket selling platform is to provide a user-friendly and efficient system for buying and selling tickets for various events, including concerts, theater performances, sports events, and movies. The platform aims to simplify the process of ticket transactions, making it accessible to both event organizers and customers.
@@ -41,9 +41,9 @@ The platform is intended for the following users:
 - Dependency 1: Integration with payment gateways for processing transactions.
 - Dependency 2: Integration with external APIs for retrieving event listings and details.
 
-## 2. Requirements Gathering
+## <a name="requirements-gathering"> 2. Requirements Gathering </a>
 
- ## **Functional Requirements:**
+**<a name="functional-requirements"> Functional Requirements: </a>**
 1. User Registration:
    - Users should be able to create accounts by providing necessary information.
    - Account activation via email verification should be implemented for security purposes.
