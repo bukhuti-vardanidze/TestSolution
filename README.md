@@ -1,21 +1,22 @@
+i want table of content to be likened:
 
 **Software Requirements Specification (SRS) Document**
 **Online Ticket Selling Platform**
 
 **Table of Contents**
-1. Introduction
-2. Requirements Gathering
-   - Functional Requirements
-   - Non-Functional Requirements
-3. System Models
-   - Use Case Diagram
-   - Class Diagram
-   - Sequence Diagram
-   - Activity Diagram
-   - State Diagram
-4. Glossary
+1. [Introduction](#introduction)
+2. [Requirements Gathering](#requirements-gathering)
+   - 2.1 [Functional Requirements](#functional-requirements)
+   - 2.2 [Non-Functional Requirements](#non-functional-requirements)
+3. [System Models](#system-models)
+   - 3.1 [Use Case Diagram](#use-case-diagram)
+   - 3.2 [Class Diagram](#class-diagram)
+   - 3.3 [Sequence Diagram](#sequence-diagram)
+   - 3.4 [Activity Diagram](#activity-diagram)
+   - 3.5 [State Diagram](#state-diagram)
+4. [Glossary](#glossary)
 
-**1. Introduction**
+## <a name="introduction"> 1. Introduction</a>
 
 **Purpose:**
 The purpose of the online ticket selling platform is to provide a user-friendly and efficient system for buying and selling tickets for various events, including concerts, theater performances, sports events, and movies. The platform aims to simplify the process of ticket transactions, making it accessible to both event organizers and customers.
@@ -40,9 +41,9 @@ The platform is intended for the following users:
 - Dependency 1: Integration with payment gateways for processing transactions.
 - Dependency 2: Integration with external APIs for retrieving event listings and details.
 
-**2. Requirements Gathering**
+## 2. Requirements Gathering
 
-**Functional Requirements:**
+ ## **Functional Requirements:**
 1. User Registration:
    - Users should be able to create accounts by providing necessary information.
    - Account activation via email verification should be implemented for security purposes.
@@ -64,7 +65,7 @@ The platform is intended for the following users:
    - Users should receive notifications for account activities (e.g., registration confirmation, ticket purchase confirmation).
    - Event organizers should receive notifications for ticket sales and event updates.
 
-**Non-Functional Requirements:**
+## **Non-Functional Requirements:**
 1. Performance:
    - The platform should handle concurrent user requests efficiently to prevent system overload.
    - Response times for actions like page loading and transaction processing should be minimal.
